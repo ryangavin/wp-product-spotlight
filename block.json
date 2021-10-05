@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/product-spotlight",
+	"version": "0.1.0",
+	"title": "Product Spotlight",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Displays an image and some summary information about a product. Includes affiliate links.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "product-spotlight",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
