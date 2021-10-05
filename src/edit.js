@@ -31,11 +31,8 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p {...useBlockProps()}>
-			{__(
-				'Product Spotlight – hello from the editor!',
-				'product-spotlight'
-			)}
-		</p>
+		<div {...useBlockProps()}>
+			<p>Price: </p>
+		</div>
 	);
 }

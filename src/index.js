@@ -26,6 +26,13 @@ import save from './save';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType('create-block/product-spotlight', {
+	attributes: {
+		price: {
+			type: 'string',
+			source: 'text'
+		},
+	},
+
 	/**
 	 * @see ./edit.js
 	 */
