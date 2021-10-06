@@ -30,7 +30,7 @@ import './editor.scss';
  */
 export default function Edit(props) {
 	const {
-		attributes: { price, connectivity, inputs, outputs, midi, whereToBuy, pros, cons },
+		attributes: { specs, whereToBuy, pros, cons },
 		setAttributes,
 	} = props;
 
@@ -39,53 +39,12 @@ export default function Edit(props) {
 			<div className="product-spotlight-features">
 				<div className="product-spotlight-row">
 					<h6 className="product-spotlight-column-left">SPECIFICATIONS</h6>
-					<div className="product-spotlight-column-right">
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">PRICE</h6>
-							<RichText
-								value={price}
-								tagName="div"
-								className="product-spotlight-column"
-								onChange={(price)=>{setAttributes({price})}}
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">CONNECTIVITY</h6>
-							<RichText
-								value={connectivity}
-								tagName="div"
-								className="product-spotlight-column"
-								onChange={(connectivity)=>{setAttributes({connectivity})}}
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">ANALOG INPUTS</h6>
-							<RichText
-								value={inputs}
-								tagName="div"
-								className="product-spotlight-column"
-								onChange={(inputs)=>{setAttributes({inputs})}}
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">ANALOG OUTPUTS</h6>
-							<RichText
-								value={outputs}
-								tagName="div"
-								className="product-spotlight-column"
-								onChange={(outputs)=>{setAttributes({outputs})}}
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">MIDI</h6>
-							<RichText
-								value={midi}
-								tagName="div"
-								className="product-spotlight-column"
-								onChange={(midi)=>{setAttributes({midi})}}
-							/>
-						</div>
-					</div>
+					<RichText
+						value={specs}
+						tagName="div"
+						className="product-spotlight-column-right"
+						onChange={(specs)=>{setAttributes({specs})}}
+					/>
 				</div>
 
 				<div className="product-spotlight-row">

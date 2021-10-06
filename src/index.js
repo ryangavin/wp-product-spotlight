@@ -27,19 +27,7 @@ import save from './save';
  */
 registerBlockType('create-block/product-spotlight', {
 	attributes: {
-		price: {
-			type: 'string',
-		},
-		connectivity: {
-			type: 'string',
-		},
-		inputs: {
-			type: 'string',
-		},
-		outputs: {
-			type: 'string',
-		},
-		midi: {
+		specs: {
 			type: 'string',
 		},
 		pros: {

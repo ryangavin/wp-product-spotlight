@@ -17,56 +17,19 @@ import {RichText, useBlockProps} from '@wordpress/block-editor';
  */
 export default function save(props) {
 	const {
-		attributes: { price, connectivity, inputs, outputs, midi, whereToBuy, pros, cons },
+		attributes: { specs, whereToBuy, pros, cons },
 	} = props;
 
 	return (
 		<div {...useBlockProps.save()}>
 			<div className="product-spotlight-features">
 				<div className="product-spotlight-row">
-					<div className="product-spotlight-column-left">SPECIFICATIONS</div>
-					<div className="product-spotlight-column-right">
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">PRICE</h6>
-							<RichText.Content
-								value={price}
-								tagName="div"
-								className="product-spotlight-column"
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">CONNECTIVITY</h6>
-							<RichText.Content
-								value={connectivity}
-								tagName="div"
-								className="product-spotlight-column"
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">ANALOG INPUTS</h6>
-							<RichText.Content
-								value={inputs}
-								tagName="div"
-								className="product-spotlight-column"
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">ANALOG OUTPUTS</h6>
-							<RichText.Content
-								value={outputs}
-								tagName="div"
-								className="product-spotlight-column"
-							/>
-						</div>
-						<div className="product-spotlight-row">
-							<h6 className="product-spotlight-column">MIDI</h6>
-							<RichText.Content
-								value={midi}
-								tagName="div"
-								className="product-spotlight-column"
-							/>
-						</div>
-					</div>
+					<h6 className="product-spotlight-column-left">SPECIFICATIONS</h6>
+					<RichText.Content
+						value={specs}
+						tagName="div"
+						className="product-spotlight-column-right"
+					/>
 				</div>
 
 				<div className="product-spotlight-row">
