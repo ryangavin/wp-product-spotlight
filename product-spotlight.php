@@ -21,6 +21,20 @@
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
 function create_block_product_spotlight_block_init() {
-	register_block_type( __DIR__ );
+
+    // automatically load dependencies and version
+    $asset_file = include( plugin_dir_path( __FILE__ ) . 'build/index.asset.php');
+
+    wp_register_script(
+        'product-spotlight',
+        plugins_url( 'build/index.js', __FILE__ ),
+        $asset_file['dependencies'],
+        $asset_file['version']
+    );
+
+    register_block_type( __DIR__, array(
+        'api_version' => 2,
+        'editor_script' => 'product-spotlight',
+    ));
 }
 add_action( 'init', 'create_block_product_spotlight_block_init' );

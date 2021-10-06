@@ -29,8 +29,28 @@ registerBlockType('create-block/product-spotlight', {
 	attributes: {
 		price: {
 			type: 'string',
-			source: 'text'
 		},
+		connectivity: {
+			type: 'string',
+		},
+		inputs: {
+			type: 'string',
+		},
+		outputs: {
+			type: 'string',
+		},
+		midi: {
+			type: 'string',
+		},
+		pros: {
+			type: 'string',
+		},
+		cons: {
+			type: 'string',
+		},
+		whereToBuy: {
+			type: 'string',
+		}
 	},
 
 	/**

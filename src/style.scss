@@ -4,3 +4,25 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.product-spotlight-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.product-spotlight-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  &-left {
+	@extend .product-spotlight-column;
+	flex-grow: 3;
+  }
+
+  &-right {
+	@extend .product-spotlight-column;
+	flex-grow: 5;
+  }
+}

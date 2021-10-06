@@ -7,7 +7,7 @@
 	"icon": "smiley",
 	"description": "Displays an image and some summary information about a product. Includes affiliate links.",
 	"supports": {
-		"html": false
+		"html": true
 	},
 	"textdomain": "product-spotlight",
 	"editorScript": "file:./build/index.js",
