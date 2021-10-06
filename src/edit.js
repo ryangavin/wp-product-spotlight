@@ -38,7 +38,7 @@ export default function Edit(props) {
 		<div {...useBlockProps()}>
 			<div className="product-spotlight-features">
 				<div className="product-spotlight-row">
-					<h6 className="product-spotlight-column-left">SPECIFICATIONS</h6>
+					<div className="product-spotlight-column-left">SPECIFICATIONS</div>
 					<RichText
 						value={specs}
 						tagName="div"
@@ -48,7 +48,7 @@ export default function Edit(props) {
 				</div>
 
 				<div className="product-spotlight-row">
-					<h6 className="product-spotlight-column-left">WHERE TO BUY</h6>
+					<div className="product-spotlight-column-left">WHERE TO BUY</div>
 					<RichText
 						value={whereToBuy}
 						tagName="div"
@@ -58,7 +58,7 @@ export default function Edit(props) {
 				</div>
 
 				<div className="product-spotlight-row">
-					<h6 className="product-spotlight-column-left">PROS</h6>
+					<div className="product-spotlight-column-left">WHY IT ROCKS</div>
 					<RichText
 						value={pros}
 						tagName="div"
@@ -68,7 +68,7 @@ export default function Edit(props) {
 				</div>
 
 				<div className="product-spotlight-row">
-					<h6 className="product-spotlight-column-left">CONS</h6>
+					<div className="product-spotlight-column-left">WHY IT DOESN'T</div>
 					<RichText
 						value={cons}
 						tagName="div"

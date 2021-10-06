@@ -42,7 +42,7 @@ export default function save(props) {
 				</div>
 
 				<div className="product-spotlight-row">
-					<h6 className="product-spotlight-column-left">PROS</h6>
+					<h6 className="product-spotlight-column-left">WHY IT ROCKS</h6>
 					<RichText.Content
 						value={pros}
 						tagName="div"
@@ -51,7 +51,7 @@ export default function save(props) {
 				</div>
 
 				<div className="product-spotlight-row">
-					<h6 className="product-spotlight-column-left">CONS</h6>
+					<h6 className="product-spotlight-column-left">WHY IT DOESN'T</h6>
 					<RichText.Content
 						value={cons}
 						tagName="div"
